@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <script type="text/javascript">
-      var path = window.location.pathname;
-      path = path.endsWith('/') ? path.slice(0, -1) : path;
-      window.location.replace(path + '/index.html');
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="%VITE_KEYWORDS%" />
+    <meta name="description" content="%VITE_DESCRIPTION%" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%VITE_FAVICON%" sizes="32x32" />
+    <link rel="icon" href="%VITE_FAVICON%" sizes="192x192" />
+    <link rel="apple-touch-icon" href="%VITE_FAVICON%" />
+    <title>%VITE_TITLE%</title>
+    <script id="%VITE_DATADIV%" type="appliction/json">
+      {
+        "url": "%VITE_URL%",
+        "name": "%VITE_NAME%",
+        "title": "%VITE_TITLE%",
+        "logo": "%VITE_LOGO%",
+        "desc": "%VITE_DESCRIPTION%",
+        "favicon": "%VITE_FAVICON%",
+        "basename": "%VITE_BASEPATH%"
+      }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="%VITE_ROOTDIV%">hhhh</div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
