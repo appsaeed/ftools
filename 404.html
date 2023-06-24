@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part of the path, and not
-      // the real directory in which the app resides, for example:
-      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-      // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Fastest tooler accessability to web development" />
+    <meta name="description" content="Fastest tooler accessability to web development" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" sizes="32x32" />
+    <link rel="icon" href="favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <title>FTools</title>
+    <script id="__DATA__" type="appliction/json">
+      {
+        "url": "/ftools/",
+        "name": "FTools",
+        "title": "FTools",
+        "logo": "favicon.png",
+        "desc": "Fastest tooler accessability to web development",
+        "favicon": "favicon.png",
+        "basename": "ftools"
+      }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" crossorigin src="/ftools/assets/404-607c867a.js"></script>
+    <link rel="stylesheet" href="/ftools/assets/404-c30cf2fe.css">
   </head>
   <body>
+    <div id="hommper"></div>
+    
   </body>
 </html>
